@@ -24,53 +24,84 @@
 /* body {
  
 } */
+ul {
+     list-style-type: none;
+   }
 
+li{
+     display: inline;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-/* @media screen and (max-width: 600px) {
-     section{
-          background: green;
-     }
-}
-
-@media (min-width: 601px) and (max-width: 900px){
-     section{
-          background: blue;
-          width: 33.3333%;
-     }
-} */
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 
-/* Padding between each text box in the form */
+.page-container{
+     display: flex;
+     flex-direction: row;
+}
+
+/* left side container */
+.left-column{
+     order: 1;
+     height: 425px;
+} 
+
+/* input fields container */
 .form-group{
-     padding: 3px;    
+     padding: 5px;
+
 }
 
-/* Padding for the entire form */
-.inputForm-wrapper{
-     padding: 3px;
-     width: 25%;
-     border: 2px solid green;
-     float: left;
+.balance{
+     background-color: green;
 }
 
-/* Display for income/expense history */
-.history-container{
-     display: grid;
-     border: 2px solid red;
-     /* float: right;
 
-     width: 75%;
-     height: 500px; */
+
+
+
+
+
+
+/* right side container */
+.right-column{
+     border: 1px solid blue;
+     display: flex;
+     flex-grow: 1;
+     order: 2;
+
+
 }
 
-.working-balance-container{
-     margin-top: 20px;
+.transaction-headers{
+
+
      border: 1px solid red;
 }
 
+.transaction-headers .payee{
+
+     border: 1px solid pink;
+}
+
+.transaction-headers .date{
+
+     border: 1px solid green;
+}
+
+.transaction-headers .trans-type{
+     border: 1px solid green;
+}
+
+.transaction-headers .notes{
+     border: 1px solid green;
+}
+
+.transaction-headers .cateogry{
+     border: 1px solid green;
+}

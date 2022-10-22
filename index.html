@@ -15,71 +15,69 @@
 
 	</head>
 	<body>
-		<header></header>
-		<form class="inputForm-wrapper">
-			<div class="form-group">
-				<input type="text" class="form-control" id="inputPayee" placeholder="Payee">
-			</div>
-			<div class="form-group">
-				<input type="date" class="form-control" id="inputDate" placeholder="Enter date">
-			</div>
-			<div class="form-group">
-				<input type="number" class="form-control income-expense" id="inputIncome" placeholder="Income">
-				<div class="form-group"></div>
-				<input type="number" class="form-control income-expense" id="inputExpense" placeholder="Expense">
-			</div>
-			<div class="form-group">
-				<input type="text" class="form-control" id="inputNote" placeholder="Notes">
-			</div>
-			<div class="dropdown form-group">
-				<button class="btn btn-secondary dropdown-toggle" type="button" id="categoryDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category</button>
-				<div class="dropdown-menu" aria-labelledby="categoryDropdown">
-					<a class="dropdown-item" href="#">Action</a>
-					<a class="dropdown-item" href="#">Another action</a>
-					<a class="dropdown-item" href="#">Something else here</a>
-				</div>
-			</div>
-			<div class="submit form-group">
-				<button class="btn btn-primary" type="submit">Submit</button>
-			</div>
+        <section class="page-container">
+            <!--<section class="row"> -->
+                <!-- INPUT SECTION HEADER *if needed -->
+                <section class="left-column">
+                    <form class="input-container">
+                        
+                        <section class="form-group">
+                            <input type="text" class="form-control" id="inputPayee" placeholder="Payee">
+                        </section>
 
-			<section class="working-balance-container">
-				<h4 class="">WORKING BALANCE:</h4>
-				<span class="">$2,000,000.00</span>
-			</section>
-			
-		</form>
-		<section class="history-container">
-			<div class="row">
-				<div class="col">
-					PAYEES
-				</div>
-				<div class="col">
-					10/25/2022
-				</div>
-				<div class="col">
-					$1,000,000
-				</div>
-				<div class="col">
-					This is a note!
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					PAYEES
-				</div>
-				<div class="col">
-					10/25/2022
-				</div>
-				<div class="col">
-					$1,000,000
-				</div>
-				<div class="col">
-					This is a note!
-				</div>
-			</div>
-		</section>
+                        <section class="form-group">
+                            <input type="date" class="form-control" id="inputDate" placeholder="Enter date">
+                        </section>
 
+                        <section class="form-group">
+                            <input type="number" class="form-control" id="inputIncome" placeholder="Income">
+                            <section class="form-group"></section>
+                            <input type="number" class="form-control" id="inputExpense" placeholder="Expense">
+                        </section>
+
+                        <section class="form-group">
+                            <input type="text" class="form-control" id="inputNote" placeholder="Notes">
+                        </section>
+
+                        <section class="dropdown form-group">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="categoryDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category</button>
+                            <section class="dropdown-menu" aria-labelledby="categoryDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </section>
+                        </section>
+
+                        <section class="submit form-group">
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                        </section>
+
+                        <section class="balance form-group">
+                            <h4>WORKING BALANCE:</h4>
+                            <span>$2,000,000.00</span>
+                        </section>
+                    </form>
+                </section>
+                
+                <!-- TRANSACTION DISPLAY SECTION HEADER -->
+                <section class="right-column">
+
+                    <!-- transaction form pane -->
+                    <section>
+                        <header class="transaction-headers">
+                            <ul>
+                                <li class="payee">PAYEE PAYEE</li>
+                                <li class="date">DATE</li>
+                                <li class="trans-type">INCOME/EXPENSE</li>
+                                <li class="notes">NOTES</li>
+                                <li class="cateogry">CATEGORY</li>
+                            </ul>
+                        </header>
+                    </section>                    
+                </section>
+
+            <!-- </section> -->
+        </section>
 		
 
 		<script type="text/javascript" src="js/main.js"></script>
