@@ -46,28 +46,31 @@
 /* ADDITIONAL STYLES
 /*******************************************/
 
+/* Padding between each text box in the form */
+.form-group{
+     padding: 3px;    
+}
+
 /* Padding for the entire form */
-.inputForm{
+.inputForm-wrapper{
      padding: 3px;
      width: 25%;
      border: 2px solid green;
      float: left;
 }
 
-/* Padding between each text box in the form */
-.form-group{
-     padding: 3px;
-     
-}
-
 /* Display for income/expense history */
-.history{
-     float: right;
+.history-container{
+     display: grid;
      border: 2px solid red;
+     /* float: right;
+
      width: 75%;
-     height: 500px;
+     height: 500px; */
 }
 
-
-
+.working-balance-container{
+     margin-top: 20px;
+     border: 1px solid red;
+}
 
