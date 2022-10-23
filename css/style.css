@@ -47,61 +47,27 @@ li{
 
 /* left side container */
 .left-column{
+     padding: 5px;
      order: 1;
-     height: 425px;
 } 
 
 /* input fields container */
 .form-group{
      padding: 5px;
-
 }
-
-.balance{
-     background-color: green;
-}
-
-
-
-
-
-
-
 
 /* right side container */
-.right-column{
-     border: 1px solid blue;
-     display: flex;
+.table-responsive{
+     padding: 5px;
      flex-grow: 1;
+     overflow-y: auto;
      order: 2;
-
-
+     height: 760px;
 }
 
-.transaction-headers{
-
-
-     border: 1px solid red;
-}
-
-.transaction-headers .payee{
-
-     border: 1px solid pink;
-}
-
-.transaction-headers .date{
-
-     border: 1px solid green;
-}
-
-.transaction-headers .trans-type{
-     border: 1px solid green;
-}
-
-.transaction-headers .notes{
-     border: 1px solid green;
-}
-
-.transaction-headers .cateogry{
-     border: 1px solid green;
+thead{
+     overflow-y: auto;
+     position: sticky;
+     top: 0;
+     background: salmon;
 }
