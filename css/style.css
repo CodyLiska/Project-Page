@@ -1,37 +1,59 @@
 /* Box Model Hack */
 * {
-     box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
-/* body {
- 
-} */
-ul {
-     list-style-type: none;
-   }
 
-li{
-     display: inline;
+/* .container {
+  display: flex;
+  gap: 5px;
+  height: 800px;
+  /* background: yellow; 
+} */
+
+.container-fluid{
+  display: flex;
+  height: 900px;
+  gap: 5px;
 }
 
+.inputForm{
+  order: 1;
+  background: blue;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.table-responsive{
+  order: 2;
+  flex-grow: 1;
+  background: green;
+}
+
+table{
+  overflow-y: hidden;
+}
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -40,34 +62,8 @@ li{
 /* ADDITIONAL STYLES
 /*******************************************/
 
-.page-container{
-     display: flex;
-     flex-direction: row;
-}
-
-/* left side container */
-.left-column{
-     padding: 5px;
-     order: 1;
-} 
-
-/* input fields container */
-.form-group{
-     padding: 5px;
-}
-
-/* right side container */
-.table-responsive{
-     padding: 5px;
-     flex-grow: 1;
-     overflow-y: auto;
-     order: 2;
-     height: 760px;
-}
-
 thead{
-     overflow-y: auto;
-     position: sticky;
-     top: 0;
-     background: salmon;
+  position: sticky;
+  top: 0;
+  background: salmon;
 }

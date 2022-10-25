@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="Your description goes here">
     <meta name="keywords" content="one, two, three">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<title>My Budget</title>
 
@@ -15,338 +15,319 @@
 
 	</head>
 	<body>
-        <section class="page-container">
-                <!-- INPUT SECTION HEADER *if needed -->
-                <section class="left-column">
-                    <form class="input-container">
-                        
-                        <section class="form-group">
-                            <input type="text" class="form-control" id="inputPayee" placeholder="Payee">
-                        </section>
-
-                        <section class="form-group">
-                            <input type="date" class="form-control" id="inputDate" placeholder="Enter date">
-                        </section>
-
-                        <section class="form-group">
-                            <input type="number" class="form-control" id="inputIncome" placeholder="Income">
-                            <section class="form-group"></section>
-                            <input type="number" class="form-control" id="inputExpense" placeholder="Expense">
-                        </section>
-
-                        <section class="form-group">
-                            <input type="text" class="form-control" id="inputNote" placeholder="Notes">
-                        </section>
-
-                        <section class="dropdown form-group">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">Category</button>
-                            <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
-                                <li><a class="dropdown-item" href="#">Credit Card</a></li>
-                                <li><a class="dropdown-item" href="#">Withdraw</a></li>
-                                <li><a class="dropdown-item" href="#">Debit</a></li>
-                            </ul>
-                        </section>
-
-                        <section class="submit form-group">
-                            <button class="btn btn-primary" type="submit">Submit</button>
-                        </section>
-
-                        <section class="form-group border-top border-success rounded-0">
-                            <h4 class="form-group">WORKING BALANCE:</h4>
-                            <span>$2,000,000.00</span>
-                        </section>
-                    </form>
-                </section>
+    <section class="container-fluid">
+      <!-- form section -->
+      <section class="inputForm">
+        <form>
+          <li>
+            <input type="text" class="form-control" id="inputPayee" placeholder="Payee">                
+            <input type="date" class="form-control" id="inputDate" placeholder="Enter date">                
+            <input type="number" class="form-control" id="inputIncome" placeholder="Income">
+            <input type="number" class="form-control" id="inputExpense" placeholder="Expense">                
+            <input type="text" class="form-control" id="inputNote" placeholder="Notes">                
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">Category</button>
+              <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                <li><a class="dropdown-item" href="#">Credit Card</a></li>
+                <li><a class="dropdown-item" href="#">Withdraw</a></li>
+                <li><a class="dropdown-item" href="#">Debit</a></li>
+              </ul>                
+            <button class="btn btn-primary" type="submit">Submit</button>                
+            <h4 class="form-group">WORKING BALANCE:</h4>               
+            <span>$2,000,000.00</span>
+          </li>
+        </form>
+      <!-- end of form section -->
+      </section>
+      
+      <!-- table section -->
+      <section class="table-responsive">
+        <table class="table table-sm">
+          <thead class="table-dark">
+            <tr>
+              <th scope="col">PAYEE</th>
+              <th scope="col">CATEGORY</th>
+              <th scope="col">DATE</th>
+              <th scope="col">TRANSACTION TYPE</th>
+              <th scope="col">NOTES</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bob Boberson</td>
+              <td>Income: Pay Check</td>
+              <td>10/25/2022</td>
+              <td>Income</td>
+              <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+            </tr>
+            <tr>
+              <td>Bob Boberson</td>
+              <td>Income: Pay Check</td>
+              <td>10/25/2022</td>
+              <td>Income</td>
+              <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+              
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
                 
-                <!-- TRANSACTION DISPLAY SECTION  -->
-                <section class="table-responsive ">
-
-                    <!-- transaction form headers -->
-                    <table class="table table-sm table-striped table-bordered">
-                        <thead>
-                            <tr>
-                                <th scope="col">PAYEE</th>
-                                <th scope="col">CATEGORY</th>
-                                <th scope="col">DATE</th>
-                                <th scope="col">TRANSACTION TYPE</th>
-                                <th scope="col">NOTES</th>
-                                
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Bob Boberson</td>
-                                <td>Income: Pay Check</td>
-                                <td>10/25/2022</td>
-                                <td>Income</td>
-                                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
-                                
-                            </tr>
-                            
-                        </tbody>
-                    </table>                   
-                </section>
-        </section>
-		
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>
+            <tr>
+                <td>Bob Boberson</td>
+                <td>Income: Pay Check</td>
+                <td>10/25/2022</td>
+                <td>Income</td>
+                <td>This is a note! This is a note! This is a note! This is a note! This is a note!</td>
+                
+            </tr>               
+          </tbody>
+        <!-- end responsive table conatiner                   -->
+        </table>
+      <!-- end of table section -->
+      </section>
+    
+      
+    <!-- end container -->
+    </section>
+    
 
 		<script type="text/javascript" src="js/main.js"></script>
-        <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 	</body>
 </html>
